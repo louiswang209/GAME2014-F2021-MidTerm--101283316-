@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * Full Name        : Zijie Wang
+ * StudentID        : 101283316
+ * Date Modified    : October 23, 2021
+ * File             : BackgroundController
+ * Description      : This is the Background Controller Script
+ * Revision History : v0.2 - Set background scroll from right to left
+*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,7 +36,7 @@ public class BackgroundController : MonoBehaviour
 
     private void _CheckBounds()
     {
-        // if the background is lower than the bottom of the screen then reset
+        // if the background is longer than the left of the screen then reset
         if (transform.position.x <= -horizontalBoundary)
         {
             _Reset();

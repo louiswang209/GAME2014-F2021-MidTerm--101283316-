@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * Full Name        : Zijie Wang
+ * StudentID        : 101283316
+ * Date Modified    : October 23, 2021
+ * File             : BulletController
+ * Description      : This is the Bullet Controller Script
+ * Revision History : v0.2 - Set player's bullets move horizontally
+*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

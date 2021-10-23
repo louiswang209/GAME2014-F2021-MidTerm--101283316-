@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * Full Name        : Zijie Wang
+ * StudentID        : 101283316
+ * Date Modified    : October 23, 2021
+ * File             : PlayerController
+ * Description      : This is the Player Controller Script
+ * Revision History : v0.2 - Set player movement to vertical movement
+*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditor;
@@ -99,13 +109,13 @@ public class PlayerController : MonoBehaviour
 
     private void _CheckBounds()
     {
-        // check right bounds
+        // check top bounds
         if (transform.position.y >= verticalBoundary)
         {
             transform.position = new Vector3(transform.position.x, verticalBoundary, 0.0f);
         }
 
-        // check left bounds
+        // check bottom bounds
         if (transform.position.y <= -verticalBoundary)
         {
             transform.position = new Vector3(transform.position.x, -verticalBoundary, 0.0f);

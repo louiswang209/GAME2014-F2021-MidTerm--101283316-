@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/*
+ * Full Name        : Zijie Wang
+ * StudentID        : 101283316
+ * Date Modified    : October 23, 2021
+ * File             : EnemyController
+ * Description      : This is the Enemy Controller Script
+ * Revision History : v0.2 - Set enemy movement to vertical movement
+*/
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,13 +32,13 @@ public class EnemyController : MonoBehaviour
 
     private void _CheckBounds()
     {
-        // check right boundary
+        // check top boundary
         if (transform.position.y >= verticalBoundary)
         {
             direction = -1.0f;
         }
 
-        // check left boundary
+        // check bottom boundary
         if (transform.position.y <= -verticalBoundary)
         {
             direction = 1.0f;
